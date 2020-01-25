@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="冬冬 你好, 可颂笪">
-    <meta name="description" content="冬冬 你好很高兴在这见到你，未来的日子里，希望都有你">
+    <meta name="keywords" content="C#异常Exception类, 可颂笪">
+    <meta name="description" content="C#中的异常：Exception类先上图：
+
+所有异常均继承自system.Exception类，所有类均为object类。
+在C#中系统异常分为系统定义异常和用户定义。通常系统会自定义一些异常类，供用户发送异常时，由系统发出，告知用户具体">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>冬冬 你好 | 可颂笪</title>
+    <title>C#异常Exception类 | 可颂笪</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -281,12 +284,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">冬冬 你好</h1>
+                    <h1 class="description center-align post-title">C#异常Exception类</h1>
                 </div>
             </div>
         </div>
@@ -415,7 +418,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-01-22
+                    2020-01-25
                 </div>
                 
 
@@ -432,7 +435,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="冬冬-你好"><a href="#冬冬-你好" class="headerlink" title="冬冬 你好"></a>冬冬 你好</h1><h3 id="很高兴在这见到你，未来的日子里，希望都有你"><a href="#很高兴在这见到你，未来的日子里，希望都有你" class="headerlink" title="很高兴在这见到你，未来的日子里，希望都有你"></a>很高兴在这见到你，未来的日子里，希望都有你</h3>
+                <h1 id="C-中的异常：Exception类"><a href="#C-中的异常：Exception类" class="headerlink" title="C#中的异常：Exception类"></a>C#中的异常：Exception类</h1><p>先上图：</p>
+<p><img src="C:%5CUsers%5C%E7%AC%AA%E5%BF%97%E5%9B%BD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200107210922183.png" alt="image-20200107210922183"></p>
+<p>所有异常均继承自system.Exception类，所有类均为object类。</p>
+<p>在C#中系统异常分为系统定义异常和用户定义。通常系统会自定义一些异常类，供用户发送异常时，由系统发出，告知用户具体错误类型。</p>
+<h3 id="常见的有System-IndexOutOfRangeException异常类，此类异常为索引超出界限异常，会产生一个异常对象，在抛出。"><a href="#常见的有System-IndexOutOfRangeException异常类，此类异常为索引超出界限异常，会产生一个异常对象，在抛出。" class="headerlink" title="常见的有System.IndexOutOfRangeException异常类，此类异常为索引超出界限异常，会产生一个异常对象，在抛出。"></a>常见的有System.IndexOutOfRangeException异常类，此类异常为索引超出界限异常，会产生一个异常对象，在抛出。</h3><h3 id="ArgumentException类：用于处理参数无效的异常。"><a href="#ArgumentException类：用于处理参数无效的异常。" class="headerlink" title="ArgumentException类：用于处理参数无效的异常。"></a>ArgumentException类：用于处理参数无效的异常。</h3><h3 id="FormatException类：用于处理参数格式错误的异常。"><a href="#FormatException类：用于处理参数格式错误的异常。" class="headerlink" title="FormatException类：用于处理参数格式错误的异常。"></a>FormatException类：用于处理参数格式错误的异常。</h3><h3 id="ArrayTypeMismatchException类：用于处理数组中存储类型不正确的元素所引发的。"><a href="#ArrayTypeMismatchException类：用于处理数组中存储类型不正确的元素所引发的。" class="headerlink" title="ArrayTypeMismatchException类：用于处理数组中存储类型不正确的元素所引发的。"></a>ArrayTypeMismatchException类：用于处理数组中存储类型不正确的元素所引发的。</h3><h3 id="IoException类：用于处理文件输入输出操作所引发的异常。"><a href="#IoException类：用于处理文件输入输出操作所引发的异常。" class="headerlink" title="IoException类：用于处理文件输入输出操作所引发的异常。"></a>IoException类：用于处理文件输入输出操作所引发的异常。</h3><h3 id="OverFlowException类：用于处理程序逻辑错误造成的死循环异常。"><a href="#OverFlowException类：用于处理程序逻辑错误造成的死循环异常。" class="headerlink" title="OverFlowException类：用于处理程序逻辑错误造成的死循环异常。"></a>OverFlowException类：用于处理程序逻辑错误造成的死循环异常。</h3><h3 id="ArithmeticException类：用于处理算术有关的异常，如0做除数。"><a href="#ArithmeticException类：用于处理算术有关的异常，如0做除数。" class="headerlink" title="ArithmeticException类：用于处理算术有关的异常，如0做除数。"></a>ArithmeticException类：用于处理算术有关的异常，如0做除数。</h3><h3 id="DbException类：用于处理所有数据源操作异常类的基类"><a href="#DbException类：用于处理所有数据源操作异常类的基类" class="headerlink" title="DbException类：用于处理所有数据源操作异常类的基类"></a>DbException类：用于处理所有数据源操作异常类的基类</h3><h3 id="sqlException类：针对sql数据源的异常，比如数据库的连接错误。"><a href="#sqlException类：针对sql数据源的异常，比如数据库的连接错误。" class="headerlink" title="sqlException类：针对sql数据源的异常，比如数据库的连接错误。"></a>sqlException类：针对sql数据源的异常，比如数据库的连接错误。</h3><h1 id="异常对象提供的信息"><a href="#异常对象提供的信息" class="headerlink" title="异常对象提供的信息"></a>异常对象提供的信息</h1><p><img src="C:%5CUsers%5C%E7%AC%AA%E5%BF%97%E5%9B%BD%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200107213537988.png" alt="image-20200107213537988"></p>
+<p>主要有如下三个信息（属性）：</p>
+<p>三个属性可通过对象属性引出：如Exception ex</p>
+<h3 id="那么ex-Source；ex-Message；ex-StackTrace均可打印出异常信息。"><a href="#那么ex-Source；ex-Message；ex-StackTrace均可打印出异常信息。" class="headerlink" title="那么ex.Source；ex.Message；ex.StackTrace均可打印出异常信息。"></a>那么ex.Source；ex.Message；ex.StackTrace均可打印出异常信息。</h3><p>Source:此属性表示异常发成在那个应用程序界面内或发生异常的对象名称。</p>
+<p>Message：此类型最为重要，提供引起异常的详细信息。</p>
+<p>StackTrace：此属性提供堆栈上的详细信息。</p>
+<p>示例程序如下：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">int</span> <span class="title">funcation</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">   serialPort1.Open(); <span class="comment">//此处存放可能存在异常的代码</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span>(Exception ex)&#123;</span><br><span class="line">    MessageBox.Show(ex.Message);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span><span class="comment">//给出返回值，用于函数的下一步处理</span></span><br><span class="line">&#125;</span><br><span class="line"> <span class="keyword">finally</span>&#123;<span class="comment">//表示不管程序是否发生异常，都会执行最后的语句</span></span><br><span class="line">     <span class="comment">//非必须语句，可酌情添加</span></span><br><span class="line">     serialPort1.Close();</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="上述return-1如何理解？"><a href="#上述return-1如何理解？" class="headerlink" title="上述return -1如何理解？"></a>上述return -1如何理解？</h3><p>该函数返回值为int型，所以需要返回一个int型数据，在通过其他函数判断返回值的数值，做出不同的相应处理，使得程序继续进行下去，保持程序的健壮性。</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><h3 id="一定要熟练的运行try-catch-finally三者的应用"><a href="#一定要熟练的运行try-catch-finally三者的应用" class="headerlink" title="一定要熟练的运行try catch finally三者的应用"></a>一定要熟练的运行try catch finally三者的应用</h3><h2 id="————————————————————————————————————"><a href="#————————————————————————————————————" class="headerlink" title="————————————————————————————————————"></a>————————————————————————————————————</h2><h2 id="多路捕获异常"><a href="#多路捕获异常" class="headerlink" title="多路捕获异常"></a>多路捕获异常</h2><p>语句如下：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">DeleteStudentById</span>(<span class="params"><span class="keyword">string</span> studentId</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">string</span> sql = <span class="string">"delete from student where studentId="</span>+studentId;</span><br><span class="line">    <span class="comment">//操作数据库的语法</span></span><br><span class="line">    <span class="keyword">try</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> SQLHelper.update(sql);<span class="comment">//返回操作数据库的返回函数</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span>(sqlException ex)&#123;</span><br><span class="line">        <span class="keyword">if</span>(ex.number == <span class="number">547</span>)</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"该学员被其他数据表引用，不能直接删除"</span>);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"数据库操作出现问题，请重试！具体错误为"</span>+ex.Message);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span>(Exception ex)&#123;<span class="comment">//此处为第二个cach，用于多路捕获异常</span></span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"操作出现问题，请重试"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>代码可以添加多个catch代码块用于捕获异常（上述代码的第一个catch用户捕获具体的数据库异常）</strong></p>
+<p><strong>一定要把Exception异常类放在最后（用为catch代码块按顺序执行，所以最高级的异常放最后）</strong></p>
+<p>异常抛出通常放在逻辑代码里面，一般不放在界面显示中，因为界面已经是最顶级的存在了</p>
+<p>通常异常都会从底层抛出，抛出给上层，方便上层的调用处理。</p>
+<p>在上述的代码中，出现两个catch，用于捕获多种异常，并通过throw抛出异常供用户检索。</p>
+<p>代码块中的 throw new Exception(“该学员被其他数据表引用，不能直接删除”)，是用户通过创建新的异常然后抛出异常，供调用此函数的上层函数处理。</p>
+<p>我认为catch块里通常对附异常有三种办法：一种办法是，什么也不做，catch语句里只有空语句;另一种办法是，用messagebox之类的通知异常;还有一种办法是，throw 一个new的异常。<br>  用哪种办法取决于你希望如何处理这个异常。</p>
+<h4 id="如果你想直接通知用户，用messagebox之类的就好了"><a href="#如果你想直接通知用户，用messagebox之类的就好了" class="headerlink" title="如果你想直接通知用户，用messagebox之类的就好了"></a>如果你想直接通知用户，用messagebox之类的就好了</h4><h4 id="如果你想由调用这个函数的程序来处理，可以throw一个new抛出，通过更上层的方法调用异常输出给用户更清晰的异常解释。"><a href="#如果你想由调用这个函数的程序来处理，可以throw一个new抛出，通过更上层的方法调用异常输出给用户更清晰的异常解释。" class="headerlink" title="如果你想由调用这个函数的程序来处理，可以throw一个new抛出，通过更上层的方法调用异常输出给用户更清晰的异常解释。"></a>如果你想由调用这个函数的程序来处理，可以throw一个new抛出，通过更上层的方法调用异常输出给用户更清晰的异常解释。</h4><h4 id="如果你希望你的程序出了“这个”异常还正常运行，就像什么也没发生一样，你可以空语句。"><a href="#如果你希望你的程序出了“这个”异常还正常运行，就像什么也没发生一样，你可以空语句。" class="headerlink" title="如果你希望你的程序出了“这个”异常还正常运行，就像什么也没发生一样，你可以空语句。"></a>如果你希望你的程序出了“这个”异常还正常运行，就像什么也没发生一样，你可以空语句。</h4><p> 总之try catch是有意义和必要的，但你的程序如何catch就是你自己的想法喽。<br>  一般来说没有必要明确的throw出一个异常，异常应该是因为程序本身运行的问题而产生的，但是有两种情况：<br> 1、测试的时候，比如说你不能真的模拟一个内存耗尽这个异常吧，那么只好明确地throw一个了。</p>
+<p>2、自定义的异常需要明确的throw出来，因为满足这个条件往往是我们自己制定的规则不满足了。</p>
+<h2 id="如下为三层异常处理"><a href="#如下为三层异常处理" class="headerlink" title="如下为三层异常处理"></a>如下为三层异常处理</h2><p>顶层防异常：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">int</span> result = <span class="keyword">new</span> StudentService().DeleteStudentById(<span class="string">"100001"</span>);</span><br><span class="line">            <span class="keyword">if</span> (result == <span class="number">1</span>)</span><br><span class="line">                Console.WriteLine(<span class="string">"删除成功！"</span>);</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                Console.WriteLine(<span class="string">"删除失败！"</span>);</span><br><span class="line">            Console.ReadLine();</span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">//顶层的异常处理。给出用户明确的处理结果提示</span></span><br></pre></td></tr></table></figure>
+
+<p>第二层防异常：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">DeleteStudentById</span>(<span class="params"><span class="keyword">string</span> studentId</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">           <span class="keyword">string</span> sql = <span class="string">"delete from Students where StudentId="</span> + studentId;</span><br><span class="line">           <span class="keyword">return</span> SQLHelper.Update(sql);</span><br><span class="line">       &#125;<span class="comment">//此处防止异常处理如上：</span></span><br><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">       <span class="keyword">return</span> SQLHelper.update(sql);<span class="comment">//返回操作数据库的返回函数</span></span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">catch</span>(sqlException ex)&#123;</span><br><span class="line">       <span class="keyword">if</span>(ex.number == <span class="number">547</span>)</span><br><span class="line">           <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"该学员被其他数据表引用，不能直接删除"</span>);</span><br><span class="line">       <span class="keyword">else</span></span><br><span class="line">           <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"数据库操作出现问题，请重试！具体错误为"</span>+ex.Message);</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">catch</span>(Exception ex)&#123;<span class="comment">//此处为第二个cach，用于多路捕获异常</span></span><br><span class="line">       <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"操作出现问题，请重试"</span>);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>最底层防异常处理：</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">Update</span>(<span class="params"><span class="keyword">string</span> sql</span>)</span></span><br><span class="line"><span class="function"></span> &#123;</span><br><span class="line">     SqlConnection conn = <span class="keyword">new</span> SqlConnection(connString);</span><br><span class="line">     SqlCommand cmd = <span class="keyword">new</span> SqlCommand(sql, conn);</span><br><span class="line">     <span class="keyword">try</span></span><br><span class="line">     &#123;</span><br><span class="line">         conn.Open();</span><br><span class="line">         <span class="keyword">int</span> result = cmd.ExecuteNonQuery();           </span><br><span class="line">         <span class="keyword">return</span> result;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">catch</span> (Exception ex)</span><br><span class="line">     &#123;</span><br><span class="line">         Console.WriteLine(ex.Message);</span><br><span class="line">         <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">finally</span></span><br><span class="line">     &#123;</span><br><span class="line">         conn.Close();</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>最底层防止异常处理，供第二层函数调用处理。</p>
+
             </div>
             <hr/>
 
@@ -457,7 +496,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/">http://yoursite.com/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/</a>
+                    <a href="http://yoursite.com/2020/01/25/C#%E5%BC%82%E5%B8%B8Exception%E7%B1%BB/">http://yoursite.com/2020/01/25/C#%E5%BC%82%E5%B8%B8Exception%E7%B1%BB/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -662,22 +701,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/01/25/C#%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E7%AB%A0/">
+                <a href="/2020/01/25/C#%E4%B8%AD%E7%9A%84string%E7%B1%BB%E5%9E%8B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="C#学习第一章">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="C#中的string类型常用方法">
                         
-                        <span class="card-title">C#学习第一章</span>
+                        <span class="card-title">C#中的string类型常用方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            C#学习第一章精度转换在C#语言中，两种精度的变量如何相互转换问题；
-自动类型转换：以int型和double型举例
-如 int a=8，double = 12.2，a+b的结果为double
-这里int为低精度，double为高精度，所以会
+                            C#中的string类型常用方法常用方法如下：
+1、字符串的复制
+(1)、String.Copy(str)：参数str为要复制的字符串，它回返回一个与该字符串相等的字符串(2)、SreStr.CopyTo(StartOfSreStr, De
                         
                     </div>
                     <div class="publish-info">
@@ -699,27 +737,30 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/">
+                <a href="/2020/01/25/C#%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E7%AB%A0/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="冬冬 你好">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="C#学习第一章">
                         
-                        <span class="card-title">冬冬 你好</span>
+                        <span class="card-title">C#学习第一章</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            冬冬 你好很高兴在这见到你，未来的日子里，希望都有你
+                            C#学习第一章精度转换在C#语言中，两种精度的变量如何相互转换问题；
+自动类型转换：以int型和double型举例
+如 int a=8，double = 12.2，a+b的结果为double
+这里int为低精度，double为高精度，所以会
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                             </span>
                         <span class="publish-author">
                             
@@ -729,7 +770,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="冬冬 你好, 可颂笪">
-    <meta name="description" content="冬冬 你好很高兴在这见到你，未来的日子里，希望都有你">
+    <meta name="keywords" content="C#中的string类型常用方法, 可颂笪">
+    <meta name="description" content="C#中的string类型常用方法常用方法如下：
+1、字符串的复制
+(1)、String.Copy(str)：参数str为要复制的字符串，它回返回一个与该字符串相等的字符串(2)、SreStr.CopyTo(StartOfSreStr, De">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>冬冬 你好 | 可颂笪</title>
+    <title>C#中的string类型常用方法 | 可颂笪</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -281,12 +283,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">冬冬 你好</h1>
+                    <h1 class="description center-align post-title">C#中的string类型常用方法</h1>
                 </div>
             </div>
         </div>
@@ -415,7 +417,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-01-22
+                    2020-01-25
                 </div>
                 
 
@@ -432,7 +434,35 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="冬冬-你好"><a href="#冬冬-你好" class="headerlink" title="冬冬 你好"></a>冬冬 你好</h1><h3 id="很高兴在这见到你，未来的日子里，希望都有你"><a href="#很高兴在这见到你，未来的日子里，希望都有你" class="headerlink" title="很高兴在这见到你，未来的日子里，希望都有你"></a>很高兴在这见到你，未来的日子里，希望都有你</h3>
+                <h1 id="C-中的string类型常用方法"><a href="#C-中的string类型常用方法" class="headerlink" title="C#中的string类型常用方法"></a>C#中的string类型常用方法</h1><p>常用方法如下：</p>
+<p>1、字符串的复制</p>
+<p>(1)、String.Copy(str)：参数str为要复制的字符串，它回返回一个与该字符串相等的字符串<br>(2)、SreStr.CopyTo(StartOfSreStr, DestStr, StartOfDestStr, CopyLen)：它必须被要复制的字符串实例调用，它可以实现复制其中某一部分到目标字符串的指定位置</p>
+<p>2、字符串的比较<br>String类字符串比较大概有4种方法:Compare(),CompareTo(), CompareOrdinal()和Equals()。</p>
+<p> Compare()方法是CompareTo()的静态版本.而Equals()与”==”是等价的,只要使用”==”运算符,就会调用Equals()方法。CompareOrdinal()对两个字符串进行比较,不考虑本地化语言和文化。</p>
+<p>(1)、String.Compara(str1, str2)：<br>(2)、String.CompareTo(string value)：该实例与value的值进行比较。返回：如果string大于value则返回1，如果string小于value则返回-1，如果两个相等则返回0。<br>(3)、String.CompareOrdinal(str1, str2):是将整个字符串每5个字符（10个字节）分成一组，然后逐个比较，找到第一个不相同的ASCII码后退出循环。并且求出两者的ASCII码的差。【我不明白为什么要实现的如此麻烦。但是在CLR via C#上有这样的话：这个方法比其他方法都要快。应该是有一定道理的吧。所以当我们比较大小的时候，尽量使用CompareOrdinal方法。<br>(4)、String.Equals(string value)：用于比较两个字符串是否相等。返回：如果和String相等则为true；否则为false。</p>
+<p>3、字符串的查找：<br>(1)、String.Contains(Findstr)：参数：Findstr为要查找的字符或字符串；功能：找指定字符串是否包含一个字串，返回值的boolean类型，即只有true和false。<br>(2)、String.IndexOf(Findstr)：参数：Findstr为要查找的字符或字符串；功能：查找FindStr在字符串中第一次出现的位置，返回值为第一次出现的下标，没有找到则返回-1.<br>(3)、String.LastIndexOf(FindStr)：参数：Findstr为要查找的字符或字符串；功能：查找FindStr在字符串中最后一次出现的位置，返回值为最后一次出现的下标，没有找到则返回-1。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">StringTest</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">int</span> nResult = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">bool</span> bResult = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">string</span> str = <span class="string">"hello everyOne!!"</span>;</span><br><span class="line">            bResult = str.Contains(<span class="string">"e"</span>);</span><br><span class="line">            Console.WriteLine(<span class="string">"Contains(\"e\") = "</span> + bResult);</span><br><span class="line">            nResult = str.IndexOf(<span class="string">"e"</span>);</span><br><span class="line">            Console.WriteLine(<span class="string">"IndexOf(\"e\") = "</span> + nResult);</span><br><span class="line">            nResult = str.LastIndexOf(<span class="string">"e"</span>);</span><br><span class="line">            Console.WriteLine(<span class="string">"LastIndexOf(\"e\") = "</span> + nResult);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">结果：Contains(<span class="string">"e"</span>) = True</span><br><span class="line">     IndexOf(<span class="string">"e"</span>) = <span class="number">1</span></span><br><span class="line">     LastIndexOf(<span class="string">"e"</span>) = <span class="number">13</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>4、字符串的截取：<br>(1)、String.SubString(StartIndex)：参数：StartIndex为要进行截取的开始下标；功能：保留字符串中下标从StartIndex开始后面的全部字符串。<br>(2)、String.SubString(StartIndex, Len)：参数：StartIndex为要开始截取的下标，Len为要截取的长度；功能：保留字符串中下标从StartIndex开始后面的Len个长度的字符串。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">StringTest</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">int</span> nResult = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">string</span> str = <span class="string">"hello everyOne!!"</span>;</span><br><span class="line">            <span class="keyword">string</span> OnePareStr = str.Substring(<span class="number">5</span>);</span><br><span class="line">            <span class="keyword">string</span> TwoPareStr = str.Substring(<span class="number">5</span>, <span class="number">6</span>);</span><br><span class="line">            Console.WriteLine(<span class="string">"str.Substring(5) = "</span> + OnePareStr);</span><br><span class="line">            Console.WriteLine(<span class="string">"str.Substring(5, 6) = "</span> + TwoPareStr);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">结果：strstr.Substring(<span class="number">5</span>) =  everyOne!!</span><br><span class="line">     str.Substring(<span class="number">5</span>, <span class="number">6</span>) =  every</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>5、字符串的分割：</strong><br>String.Split(SplitCh)：参数：SplitCh为分割的字符；功能：将字符串一SplitCh进行分割，它的返回值是一个字符串数组。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">StringTest</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">string</span> str = <span class="string">"hello everyOne!!"</span>;</span><br><span class="line">            <span class="keyword">string</span>[] destStr = str.Split(<span class="string">'e'</span>);</span><br><span class="line">            Console.Write(<span class="string">"str.Split('e') = "</span>);</span><br><span class="line">            <span class="keyword">foreach</span> (<span class="keyword">string</span> outstr <span class="keyword">in</span> destStr)</span><br><span class="line">            &#123;</span><br><span class="line">                Console.Write(outstr);</span><br><span class="line">                Console.Write(<span class="string">" "</span>);</span><br><span class="line">            &#125; </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">结果：str.Split(<span class="string">'e'</span>) = h llo  v ryOn !!</span><br></pre></td></tr></table></figure>
+
+
+
+<p>6、字符串的合并:<br>(1)、String.Concat(str1, str2, …., strn)：将n个字符串连接，中间没有连接符<br>(2)、String.Join(SplitCh, array)：参数：SplitCh为合并后的分隔符，array为要合并的字符串数组；功能：将字符串书组合并成一个字符串，每个元素之间用SplitCh隔开</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> <span class="title">StringTest</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">string</span> str1 = <span class="string">"hello, "</span>;</span><br><span class="line">            <span class="keyword">string</span> str2 = <span class="string">"I am very happy!!"</span>;</span><br><span class="line">            <span class="keyword">string</span>[] array= &#123;<span class="string">"hello"</span>, <span class="string">"I am"</span>, <span class="string">"very happy!!"</span>&#125;;</span><br><span class="line">            <span class="keyword">string</span> ConcatStr = <span class="keyword">string</span>.Concat(str1, str2);</span><br><span class="line">            String JoinStr = <span class="keyword">string</span>.Join(<span class="string">"|"</span>, array);</span><br><span class="line">            Console.WriteLine(<span class="string">"string.Concat(str1, str2) = "</span> + ConcatStr);</span><br><span class="line">            Console.WriteLine(<span class="string">"string.Join('-', array) = "</span> + JoinStr);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">结果：<span class="keyword">string</span>.Concat(str1, str2) = hello, I am very happy!!</span><br><span class="line">     <span class="keyword">string</span>.Join(<span class="string">'-'</span>, array) = hello|I am|very happy!!</span><br><span class="line">    </span><br><span class="line">其实字符串连接也可以用 ‘+’ 来实现。</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">namespace</span> <span class="title">StringTest</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">string</span> str1 = <span class="string">"hello, "</span>;</span><br><span class="line">            <span class="keyword">string</span> str2 = <span class="string">"I am very happy!!"</span>;</span><br><span class="line">            <span class="keyword">string</span> DestStr = str1 + str2;</span><br><span class="line">            Console.WriteLine(<span class="string">"str1 + str2 = "</span> + DestStr);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">结果：str1 + str2 = hello, I am very happy!!</span><br></pre></td></tr></table></figure>
+
+
+
+
             </div>
             <hr/>
 
@@ -457,7 +487,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/">http://yoursite.com/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/</a>
+                    <a href="http://yoursite.com/2020/01/25/C#%E4%B8%AD%E7%9A%84string%E7%B1%BB%E5%9E%8B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">http://yoursite.com/2020/01/25/C#%E4%B8%AD%E7%9A%84string%E7%B1%BB%E5%9E%8B%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -662,22 +692,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/01/25/C#%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E7%AB%A0/">
+                <a href="/2020/01/25/C#%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="C#学习第一章">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="C#中的引用传递">
                         
-                        <span class="card-title">C#学习第一章</span>
+                        <span class="card-title">C#中的引用传递</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            C#学习第一章精度转换在C#语言中，两种精度的变量如何相互转换问题；
-自动类型转换：以int型和double型举例
-如 int a=8，double = 12.2，a+b的结果为double
-这里int为低精度，double为高精度，所以会
+                            C#中的引用传递c#中的引用传递关键字：ref
+使用引用传递。
+123456789101112public void huan(int a,int b)&#123;//利用一个变量将a和b的值互换&#125;//下面是main程序&#123
                         
                     </div>
                     <div class="publish-info">
@@ -699,27 +728,30 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/">
+                <a href="/2020/01/25/C#%E5%BC%82%E5%B8%B8Exception%E7%B1%BB/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="冬冬 你好">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="C#异常Exception类">
                         
-                        <span class="card-title">冬冬 你好</span>
+                        <span class="card-title">C#异常Exception类</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            冬冬 你好很高兴在这见到你，未来的日子里，希望都有你
+                            C#中的异常：Exception类先上图：
+
+所有异常均继承自system.Exception类，所有类均为object类。
+在C#中系统异常分为系统定义异常和用户定义。通常系统会自定义一些异常类，供用户发送异常时，由系统发出，告知用户具体
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                             </span>
                         <span class="publish-author">
                             
@@ -729,7 +761,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

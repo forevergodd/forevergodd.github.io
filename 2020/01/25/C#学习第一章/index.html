@@ -4,8 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="冬冬 你好, 可颂笪">
-    <meta name="description" content="冬冬 你好很高兴在这见到你，未来的日子里，希望都有你">
+    <meta name="keywords" content="C#学习第一章, 可颂笪">
+    <meta name="description" content="C#学习第一章精度转换在C#语言中，两种精度的变量如何相互转换问题；
+自动类型转换：以int型和double型举例
+如 int a=8，double = 12.2，a+b的结果为double
+这里int为低精度，double为高精度，所以会">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>冬冬 你好 | 可颂笪</title>
+    <title>C#学习第一章 | 可颂笪</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -281,12 +284,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">冬冬 你好</h1>
+                    <h1 class="description center-align post-title">C#学习第一章</h1>
                 </div>
             </div>
         </div>
@@ -415,7 +418,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-01-22
+                    2020-01-25
                 </div>
                 
 
@@ -432,7 +435,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="冬冬-你好"><a href="#冬冬-你好" class="headerlink" title="冬冬 你好"></a>冬冬 你好</h1><h3 id="很高兴在这见到你，未来的日子里，希望都有你"><a href="#很高兴在这见到你，未来的日子里，希望都有你" class="headerlink" title="很高兴在这见到你，未来的日子里，希望都有你"></a>很高兴在这见到你，未来的日子里，希望都有你</h3>
+                <h1 id="C-学习第一章"><a href="#C-学习第一章" class="headerlink" title="C#学习第一章"></a>C#学习第一章</h1><h3 id="精度转换"><a href="#精度转换" class="headerlink" title="精度转换"></a>精度转换</h3><p>在C#语言中，两种精度的变量如何相互转换问题；</p>
+<h3 id="自动类型转换："><a href="#自动类型转换：" class="headerlink" title="自动类型转换："></a>自动类型转换：</h3><p>以int型和double型举例</p>
+<p>如 int a=8，double = 12.2，a+b的结果为double</p>
+<p>这里int为低精度，double为高精度，所以会自动转换为高精度数。</p>
+<p>请看这个例子：<code>double d=2;</code> success<br>再看这个例子：`int i=3.0；false</p>
+<h3 id="强制类型转换："><a href="#强制类型转换：" class="headerlink" title="强制类型转换："></a>强制类型转换：</h3><p>强制类型转换符为（）</p>
+<p>如  int i = （int）3.0   //此语句会将double类型的转换为int型变量，</p>
+<p>最后赋予i；</p>
+<h3 id="优先级运算"><a href="#优先级运算" class="headerlink" title="优先级运算"></a>优先级运算</h3><h2 id="C-的运算符优先级"><a href="#C-的运算符优先级" class="headerlink" title="C#的运算符优先级"></a>C#的运算符优先级</h2><p>C#运算符的优先级请参考下面的顺序：</p>
+<p>①<strong>括号</strong>。学数学的时候我们就知道，要先计算括号里面的内容。C#语言也是一样，如果有多层括号，要从里向外计算。括号优先级最高。</p>
+<p>②<strong>一元运算符</strong>。有些运算符两边有2个操作数，比如2+3、6%5等等，这些叫做<strong>二元运算符</strong>。只有一个操作数的叫做<strong>一元运算符</strong>，它们的优先级高于二元运算符。一元运算符包括：<strong>++(自加) 、 –（自减） 、 !（逻辑非）</strong>。</p>
+<p>③<strong>*（乘）、/（除）、%（取余）</strong>。</p>
+<p>④<strong>+（加）、-（减）</strong>。</p>
+<p>⑤<strong>&gt;（大于）、&lt;（小于）、&gt;=（大于等于）、&lt;=（小于等于）</strong>。</p>
+<p>⑥<strong>==（等于）、!=（不等于）</strong>。</p>
+<p>⑦<strong>&amp;&amp;（逻辑与）</strong>。</p>
+<p>⑧<strong>||（逻辑或）</strong>。</p>
+<p>⑨<strong>赋值运算符</strong>。包括：=、+=、-=、*=、/=、%=。</p>
+<p>另外，还需要注意一点：<strong>优先级相同的运算符从左向右计算（赋值运算符相反）</strong>。</p>
+
             </div>
             <hr/>
 
@@ -457,7 +479,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/">http://yoursite.com/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/</a>
+                    <a href="http://yoursite.com/2020/01/25/C#%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E7%AB%A0/">http://yoursite.com/2020/01/25/C#%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E7%AB%A0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -662,22 +684,22 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/01/25/C#%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E7%AB%A0/">
+                <a href="/2020/01/25/C#%E5%BC%82%E5%B8%B8Exception%E7%B1%BB/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="C#学习第一章">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="C#异常Exception类">
                         
-                        <span class="card-title">C#学习第一章</span>
+                        <span class="card-title">C#异常Exception类</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            C#学习第一章精度转换在C#语言中，两种精度的变量如何相互转换问题；
-自动类型转换：以int型和double型举例
-如 int a=8，double = 12.2，a+b的结果为double
-这里int为低精度，double为高精度，所以会
+                            C#中的异常：Exception类先上图：
+
+所有异常均继承自system.Exception类，所有类均为object类。
+在C#中系统异常分为系统定义异常和用户定义。通常系统会自定义一些异常类，供用户发送异常时，由系统发出，告知用户具体
                         
                     </div>
                     <div class="publish-info">
@@ -699,7 +721,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/01/22/%E5%86%AC%E5%86%AC%20%E4%BD%A0%E5%A5%BD/">
@@ -729,7 +751,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
